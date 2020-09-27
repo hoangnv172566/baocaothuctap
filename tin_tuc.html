@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tin tức</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ============= Bootstrap Css ============= -->
+    <link rel="stylesheet" href="./library/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+
+    <!-- ============= Fontawesome Css ============= -->
+    <link rel="stylesheet" href="./library/fontawesome-free-5.14.0-web/css/all.css">
+
+    <!-- ============= Library Css============= -->
+
+    <!-- ============= Global Css ============= -->
+    <link rel="stylesheet" href="./css/global.css">
+    <!-- ============= Custom Css ============= -->
+    <link rel="stylesheet" href="./css/tin_tuc.css">
+    <link rel="stylesheet" href="./css/common_moreInfo.css">
+    <link rel="stylesheet" href="./css/common_category.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <a href="" class="logo-area">
+                        <div class="logo-a__img">
+                            <img src="./public/icon/logo.png" alt="Thiết bị điện AVHH">
+                        </div>
+                        <div class="logo-a__text">
+                            <span>Thiết bị điện AVHH</span>
+                            <p><i>An toàn cho mọi nhà</i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 d-none d-md-block">
+                    <div class="header-contact">
+                        <a href="" class="email">
+                            <img src="./public/icon/mail.png" alt="Mail">
+                        </a>
+                        <a href="" class="facebook">
+                            <img src="./public/icon/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="" class="youtube">
+                            <img src="./public/icon/youtube.png" alt="Youtube">
+                        </a>
+                        <a href="" class="zalo">
+                            <img src="./public/icon/zalo.png" alt="Zalo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-6 d-none d-md-block nav-cate-wrapper">
+                        <div class="nav-category">
+                            <i class="fas fa-bars"></i>
+                            <span>Danh mục sản phẩm</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="nav-wrap d-flex justify-content-between align-items-center">
+                            <div class="shadow"><i class="fas fa-times"></i></div>
+                            <i class="fas fa-bars d-md-none bars-open"></i>
+                            <ul class="nav">
+                                <li><a href="trang-chu" class="item-logo d-md-none">
+                                        <div class="item-logo__img">
+                                            <img src="./public/icon/logo.png" alt="">
+                                        </div>
+                                        <div class="item-logo__text">
+                                            <span>Thiết bị diện AVHH</span>
+                                            <i>An toàn cho mọi nhà</i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="trang-chu">Trang chủ</a></li>
+                                <li><a href="gioi-thieu">Giới thiệu</a></li>
+                                <li><a href="cong-trinh">Công trình</a></li>
+                                <li><a href="tin-tuc">Tin tức</a></li>
+                                <li><a href="lien-he">Liên hệ</a></li>
+                            </ul>
+                            <div class="search-icon" title="Tìm kiếm">
+                                <i class="fas fa-search search-click"></i>
+                                <div class="input-search">
+                                    <select id="cars">
+                                        <option value="" selected="selected">Tất cả</option>
+                                        <option value="cam-ung-gan-tran-bao-chay">Cảm ứng gắn trần &amp; Báo cháy</option>
+                                        <option value="chuong-cua-man-hinh">Chuông cửa màn hình</option>
+                                        <option value="cong-tac-o-cam">Công tắc ổ cắm</option>
+                                        <option value="thiet-bi-chieu-sang-panasonic">Đèn chiếu sáng</option>
+                                        <option value="may-bom-nuoc">Máy bơm nước</option>
+                                        <option value="o-cam-am-san-panasonic">Ổ cắm âm sàn</option>
+                                        <option value="ong-luon-day">Ống luồn dây</option>
+                                        <option value="phich-cam-o-cam-cong-nghiep">Phích cắm &amp; ổ cắm PCE</option>
+                                        <option value="quat-dien-panasonic">Quạt điện</option>
+                                        <option value="san-pham-khac">Sản phẩm khác</option>
+                                        <option value="thiet-bi-dong-cat">Thiết bị đóng cắt</option>
+                                        <option value="tu-dien-phu-kien-panasonic">Tủ điện &amp; Phụ kiện</option>
+                                    </select>
+                                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                                    <i class="fas fa-search"></i>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="tinTuc">
+            <div class="container">
+                <div class="tinTuc__title row">
+                    <div class="col-12">
+                        <h2 class="text-uppercase text-center ">Chuyên mục: Tin tức</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 col-md-9 " id="list-tin-tuc">
+                        <!-- ===hidden tintuc element=== -->
+                        <a href="#" class="tinTuc__element row  mt-3 mt-md-5" id="tinTuc__element">
+                            <div class="col-12 col-md-5">
+                                <div class="tinTuc__element--img">
+                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2018/08/bep-dien-tu-panasonic-chat-luong-300x163.jpg"
+                                        alt="">
+                                    <div
+                                        class="tinTuc__element--time d-flex flex-column justify-content-center align-items-center">
+                                        <div class="tinTuc__element--date">28</div>
+                                        <div class="tinTuc__element--month">Th8</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="tinTuc__element--info">
+                                    <h4 class="tinTuc__element--name text-center text-md-left pt-3 pt-md-0">Đại lý cung
+                                        cấp bếp điện
+                                        từ Panasonic tp.HCM</h4>
+                                    <p class="tinTuc__element--description">Hiện nay, với nhu cầu lắp đặt, sử dụng bếp
+                                        điện từ Panasonic ngày càng
+                                        nhiều, đặc biệt ở các thành phố lớn như Hà Nội, tp.HCM. Dòng sản phẩm bếp điện
+                                        từ Panasonic có nhiều ưu điểm nổi bật; chất lượng tốt, thiết kế tinh tế, độ bền
+                                        cao, giá thành phải chăng..</p>
+                                    <p class="tinTuc__element--commentCount  text-uppercase">4 comments</p>
+                                    <div class="tinTuc__element--showMoreBtn">
+                                        <button class="btn-showMore">Xem Thêm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ===end hidden tintuc element=== -->
+
+                        <a href="#" class="tinTuc__element row  mt-3 mt-md-5" id="tinTuc__element">
+                            <div class="col-12 col-md-5">
+                                <div class="tinTuc__element--img">
+                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2018/08/bep-dien-tu-panasonic-chat-luong-300x163.jpg"
+                                        alt="">
+                                    <div
+                                        class="tinTuc__element--time d-flex flex-column justify-content-center align-items-center">
+                                        <div class="tinTuc__element--date">28</div>
+                                        <div class="tinTuc__element--month">Th8</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="tinTuc__element--info">
+                                    <h4 class="tinTuc__element--name text-center text-md-left pt-3 pt-md-0">Đại lý cung
+                                        cấp bếp điện
+                                        từ Panasonic tp.HCM</h4>
+                                    <p class="tinTuc__element--description">Hiện nay, với nhu cầu lắp đặt, sử dụng bếp
+                                        điện từ Panasonic ngày càng
+                                        nhiều, đặc biệt ở các thành phố lớn như Hà Nội, tp.HCM. Dòng sản phẩm bếp điện
+                                        từ Panasonic có nhiều ưu điểm nổi bật; chất lượng tốt, thiết kế tinh tế, độ bền
+                                        cao, giá thành phải chăng..</p>
+                                    <p class="tinTuc__element--commentCount  text-uppercase">4 comments</p>
+                                    <div class="tinTuc__element--showMoreBtn">
+                                        <button class="btn-showMore">Xem Thêm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="tinTuc__element row  mt-3 mt-md-5" id="tinTuc__element">
+                            <div class="col-12 col-md-5">
+                                <div class="tinTuc__element--img">
+                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2018/08/bep-dien-tu-panasonic-chat-luong-300x163.jpg"
+                                        alt="">
+                                    <div
+                                        class="tinTuc__element--time d-flex flex-column justify-content-center align-items-center">
+                                        <div class="tinTuc__element--date">28</div>
+                                        <div class="tinTuc__element--month">Th8</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="tinTuc__element--info">
+                                    <h4 class="tinTuc__element--name text-center text-md-left pt-3 pt-md-0">Đại lý cung
+                                        cấp bếp điện
+                                        từ Panasonic tp.HCM</h4>
+                                    <p class="tinTuc__element--description">Hiện nay, với nhu cầu lắp đặt, sử dụng bếp
+                                        điện từ Panasonic ngày càng
+                                        nhiều, đặc biệt ở các thành phố lớn như Hà Nội, tp.HCM. Dòng sản phẩm bếp điện
+                                        từ Panasonic có nhiều ưu điểm nổi bật; chất lượng tốt, thiết kế tinh tế, độ bền
+                                        cao, giá thành phải chăng..</p>
+                                    <p class="tinTuc__element--commentCount  text-uppercase">4 comments</p>
+                                    <div class="tinTuc__element--showMoreBtn">
+                                        <button class="btn-showMore">Xem Thêm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="tinTuc__element row  mt-3 mt-md-5" id="tinTuc__element">
+                            <div class="col-12 col-md-5">
+                                <div class="tinTuc__element--img">
+                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2018/08/bep-dien-tu-panasonic-chat-luong-300x163.jpg"
+                                        alt="">
+                                    <div
+                                        class="tinTuc__element--time d-flex flex-column justify-content-center align-items-center">
+                                        <div class="tinTuc__element--date">28</div>
+                                        <div class="tinTuc__element--month">Th8</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="tinTuc__element--info">
+                                    <h4 class="tinTuc__element--name text-center text-md-left pt-3 pt-md-0">Đại lý cung
+                                        cấp bếp điện
+                                        từ Panasonic tp.HCM</h4>
+                                    <p class="tinTuc__element--description">Hiện nay, với nhu cầu lắp đặt, sử dụng bếp
+                                        điện từ Panasonic ngày càng
+                                        nhiều, đặc biệt ở các thành phố lớn như Hà Nội, tp.HCM. Dòng sản phẩm bếp điện
+                                        từ Panasonic có nhiều ưu điểm nổi bật; chất lượng tốt, thiết kế tinh tế, độ bền
+                                        cao, giá thành phải chăng..</p>
+                                    <p class="tinTuc__element--commentCount  text-uppercase">4 comments</p>
+                                    <div class="tinTuc__element--showMoreBtn">
+                                        <button class="btn-showMore">Xem Thêm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- right side -->
+                    <div class="col-12 col-md-3 mt-5 mt-md-5">
+                        <div class="row">
+                            <!-- danh muc -->
+                            <div class="col-12">
+                                <div class="tinTuc__danhMuc">
+                                    <div class="tinTuc__danhMuc--title">
+                                        <h3 class="text-uppercase text-left">Danh mục</h3>
+                                    </div>
+                                    <div class="tinTuc__danhMuc--listDm" id="listDm">
+                                        <!-- ===hiden template=== -->
+                                        <ul class="tinTuc__danhMuc--firstLevelUl" id='hiddenElementDm'>
+                                            <li class="tinTuc__danhMuc--firstLevelLi ">
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="#" class="tinTuc__danhMuc--link">Công tắc ổ cắm</a>
+                                                </div>
+                                            </li>
+                                            <li class="tinTuc__danhMuc--firstLevelLi ">
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="#" class="tinTuc__danhMuc--link">Phích cắm</a>
+                                                </div>
+                                            </li>
+                                            <li class="tinTuc__danhMuc--firstLevelLi ">
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="#" class="tinTuc__danhMuc--link">Dây điện</a>
+                                                </div>
+                                            </li>
+                                            <li class="tinTuc__danhMuc--firstLevelLi ">
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="#" class="tinTuc__danhMuc--link">Bản lề</a>
+                                                </div>
+                                            </li>
+                                            <li class="tinTuc__danhMuc--firstLevelLi ">
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="#" class="tinTuc__danhMuc--link">Cầu chì</a>
+                                                </div>
+                                            </li>
+                                            <li class="tinTuc__danhMuc--firstLevelLi ">
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="#" class="tinTuc__danhMuc--link">Astomas</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <!-- === end hiden template=== -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end danh mục -->
+
+                            <!-- sản phẩm nổi bật -->
+
+                            <div class="col-12 tinTuc__spnb">
+                                <div class="tinTuc__spnb--title">
+                                    <h3 class="text-uppercase text-left">Sản phẩm nổi bật</h3>
+                                </div>
+                                <div class="tinTuc__spnb--list">
+                                    <ul class="tinTuc__spnb--ul" id='list-product'>
+                                        <li class="tinTuc__spnb--li" id="hidden-product">
+                                            <a href="">
+                                                <span class="tinTuc__spnb--imgProduct">
+                                                    <img class="img-fluid"
+                                                        src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__spnb--productName"> Đèn cảm biến hồng ngoại
+                                                    </div>
+                                                    <div>
+                                                        <span class="tinTuc__spnb--oldPrice"><del>2.540.000
+                                                                <u>đ</u></del>
+                                                        </span>
+                                                        <span class="tinTuc__spnb--newPrice">1.778.000<u>đ</u></span>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+                                        <li class="tinTuc__spnb--li" id="hidden-product">
+                                            <a href="">
+                                                <span class="tinTuc__spnb--imgProduct">
+                                                    <img class="img-fluid"
+                                                        src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__spnb--productName"> Đèn cảm biến hồng ngoại
+                                                    </div>
+                                                    <div>
+                                                        <span class="tinTuc__spnb--oldPrice"><del>2.540.000
+                                                                <u>đ</u></del>
+                                                        </span>
+                                                        <span class="tinTuc__spnb--newPrice">1.778.000<u>đ</u></span>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+                                        <li class="tinTuc__spnb--li" id="hidden-product">
+                                            <a href="">
+                                                <span class="tinTuc__spnb--imgProduct">
+                                                    <img class="img-fluid"
+                                                        src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__spnb--productName"> Đèn cảm biến hồng ngoại
+                                                    </div>
+                                                    <div>
+                                                        <span class="tinTuc__spnb--oldPrice"><del>2.540.000
+                                                                <u>đ</u></del>
+                                                        </span>
+                                                        <span class="tinTuc__spnb--newPrice">1.778.000<u>đ</u></span>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+                                        <li class="tinTuc__spnb--li" id="hidden-product">
+                                            <a href="">
+                                                <span class="tinTuc__spnb--imgProduct">
+                                                    <img class="img-fluid"
+                                                        src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__spnb--productName"> Đèn cảm biến hồng ngoại
+                                                    </div>
+                                                    <div>
+                                                        <span class="tinTuc__spnb--oldPrice"><del>2.540.000
+                                                                <u>đ</u></del>
+                                                        </span>
+                                                        <span class="tinTuc__spnb--newPrice">1.778.000<u>đ</u></span>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- end sản phẩm nổi bật -->
+
+                            <!-- bai viet gan day -->
+                            <div class="col-12 tinTuc__bvgd">
+                                <div class="tinTuc__bvgd--title">
+                                    <h3 class="text-uppercase text-left">Bài viết gần đây</h3>
+                                </div>
+                                <div class="tinTuc__bvgd--list">
+                                    <ul class="tinTuc__bvgd--ul" id="list-bvgd">
+                                        <!--=== hidden newsest article=== -->
+                                        <li class="tinTuc__bvgd--li" id='hidden-bvgd'>
+                                            <a class="tinTuc__bvgd--link" href="">
+                                                <span class="tinTuc__bvgd--imgProduct">
+                                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                    <div class="tinTuc__bvgd--time">
+                                                        <div class="tinTuc__bvgd--date">28</div>
+                                                        <div class="tinTuc__bvgd--month">Th8</div>
+                                                    </div>
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__bvgd--productName"> Đại lý cung cấp bếp điện từ
+                                                        Panasonic tp.HCM
+                                                    </div>
+                                                    <div class="tinTuc__bvgd--commentCount">
+                                                        <p>4 Comments</p>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+                                        <!--===end hidden newsest article=== -->
+
+                                        <li class="tinTuc__bvgd--li" id='hidden-bvgd'>
+                                            <a class="tinTuc__bvgd--link" href="">
+                                                <span class="tinTuc__bvgd--imgProduct">
+                                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                    <div class="tinTuc__bvgd--time">
+                                                        <div class="tinTuc__bvgd--date">28</div>
+                                                        <div class="tinTuc__bvgd--month">Th8</div>
+                                                    </div>
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__bvgd--productName"> Đại lý cung cấp bếp điện từ
+                                                        Panasonic tp.HCM
+                                                    </div>
+                                                    <div class="tinTuc__bvgd--commentCount">
+                                                        <p>4 Comments</p>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+
+                                        <li class="tinTuc__bvgd--li" id='hidden-bvgd'>
+                                            <a class="tinTuc__bvgd--link" href="">
+                                                <span class="tinTuc__bvgd--imgProduct">
+                                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                    <div class="tinTuc__bvgd--time">
+                                                        <div class="tinTuc__bvgd--date">28</div>
+                                                        <div class="tinTuc__bvgd--month">Th8</div>
+                                                    </div>
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__bvgd--productName"> Đại lý cung cấp bếp điện từ
+                                                        Panasonic tp.HCM
+                                                    </div>
+                                                    <div class="tinTuc__bvgd--commentCount">
+                                                        <p>4 Comments</p>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+
+                                        <li class="tinTuc__bvgd--li" id='hidden-bvgd'>
+                                            <a class="tinTuc__bvgd--link" href="">
+                                                <span class="tinTuc__bvgd--imgProduct">
+                                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                    <div class="tinTuc__bvgd--time">
+                                                        <div class="tinTuc__bvgd--date">28</div>
+                                                        <div class="tinTuc__bvgd--month">Th8</div>
+                                                    </div>
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__bvgd--productName"> Đại lý cung cấp bếp điện từ
+                                                        Panasonic tp.HCM
+                                                    </div>
+                                                    <div class="tinTuc__bvgd--commentCount">
+                                                        <p>4 Comments</p>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+
+                                        <li class="tinTuc__bvgd--li" id='hidden-bvgd'>
+                                            <a class="tinTuc__bvgd--link" href="">
+                                                <span class="tinTuc__bvgd--imgProduct">
+                                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/thiet-bi-cam-ung-panasonic-wtkg231-175x175.jpg"
+                                                        alt="">
+                                                    <div class="tinTuc__bvgd--time">
+                                                        <div class="tinTuc__bvgd--date">28</div>
+                                                        <div class="tinTuc__bvgd--month">Th8</div>
+                                                    </div>
+                                                </span>
+
+                                                <span>
+                                                    <div class="tinTuc__bvgd--productName"> Đại lý cung cấp bếp điện từ
+                                                        Panasonic tp.HCM
+                                                    </div>
+                                                    <div class="tinTuc__bvgd--commentCount">
+                                                        <p>4 Comments</p>
+                                                    </div>
+                                                </span>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end bai viet gan day  -->
+
+                            <!-- nhan bao gia -->
+                            <div class="col-12 tinTuc__nbg">
+                                <div class="tinTuc__nbg--title">
+                                    <h3 class="text-uppercase text-left">Nhận báo giá</h3>
+                                </div>
+                                <div class="tinTuc__nbg--img" data-target='#exampleModal' data-toggle='modal'>
+                                    <img src="https://thietbidienpanasonic.com/wp-content/uploads/2017/06/bao-gia-thiet-bi-dien-panasonic.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <!-- end nhan bao gia -->
+                        </div>
+
+                    </div>
+                    <!-- end right side -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-wiget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h2 class="wiget-title text-center">tư vấn kĩ thuật</h2>
+                        <ul class="wiget-item">
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Đại lý cung cấp bếp
+                                        điện tử Panasonic tp.HCM</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Mua bếp điện tử
+                                        Panasonic giá rẻ ở đâu?</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Bếp điện tử Panasonic
+                                        có tốt không?</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Đèn bàn Led giá rẻ mua
+                                        ở đâu?</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Đèn bàn nên chọn loại
+                                        nào tốt nhất?</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2 class="wiget-title text-center">Thông tin công ty</h2>
+                        <ul class="wiget-item">
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Đại lý cung cấp bếp
+                                        điện tử Panasonic tp.HCM</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Mua bếp điện tử
+                                        Panasonic giá rẻ ở đâu?</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Bếp điện tử Panasonic
+                                        có tốt không?</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Đèn bàn Led giá rẻ mua
+                                        ở đâu?</span></a></li>
+                            <li><a href=""><span><i class="fas fa-angle-right"></i></span> <span>Đèn bàn nên chọn loại
+                                        nào tốt nhất?</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2 class="wiget-title text-center">tài liệu-báo giá</h2>
+                        <ul class="wiget-item">
+                            <li><a href=""><span style="color: rgb(253, 80, 80)"><i class="far fa-file-pdf"></i></span>
+                                    <span>Đại lý cung cấp bếp
+                                        điện tử Panasonic tp.HCM</span></a></li>
+                            <li><a href=""><span style="color: rgb(253, 80, 80)"><i class="far fa-file-pdf"></i></span>
+                                    <span>Mua bếp điện tử
+                                        Panasonic giá rẻ ở đâu?</span></a></li>
+                            <li><a href=""><span style="color: rgb(253, 80, 80)"><i class="far fa-file-pdf"></i></span>
+                                    <span>Bếp điện tử Panasonic
+                                        có tốt không?</span></a></li>
+                            <li><a href=""><span style="color: rgb(253, 80, 80)"><i class="far fa-file-pdf"></i></span>
+                                    <span>Đèn bàn Led giá rẻ mua
+                                        ở đâu?</span></a></li>
+                            <li><a href=""><span style="color: rgb(253, 80, 80)"><i class="far fa-file-pdf"></i></span>
+                                    <span>Đèn bàn nên chọn loại
+                                        nào tốt nhất?</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-ft">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 ">
+                        <a href="" class="logo-area">
+                            <div class="logo-a__img">
+                                <img src="./public/icon/logo.png" alt="Thiết bị điện AVHH">
+                            </div>
+                            <div class="logo-a__text">
+                                <span>Thiết bị điện AVHH</span>
+                                <p><i>An toàn cho mọi nhà</i></p>
+                            </div>
+                        </a>
+                        <p class="text-justify text-md-left text-decs">Website trực tuyến phân phối thiết bị điện Panasonic thuộc công ty TNHH Sirius Việt Nam. Tự
+                            hào là nhà cung ứng vật tư điện hàng đầu cho các công trình trọng điểm trên cả nước. Tiên
+                            phong về giá, đi đầu về dịch vụ.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 pt-4 pt-lg-0">
+                        <div class="footer-contact">
+                            <div class="ft-title">
+                                <span>Liên hệ</span>
+                            </div>
+                            <div class="ft-content">
+                                <p><i class="fas fa-map-marker-alt"></i>&nbsp;<span class="address">Nguyễn Phong Sắc Kéo
+                                        Dài, Cầu Giấy, Hà
+                                        Nội</span></p>
+                                <p><i class="fas fa-phone-alt"></i>&nbsp;<a href="tel:0978960013">0978960013</a>-<a
+                                        href="tel:0978960013">0978960013</a></p>
+                                <p><i class="fas fa-envelope"></i>&nbsp;<a
+                                        href="mailto:huyngo@gmail.com">huyngo@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 pt-4 pt-lg-0">
+                        <div class="footer-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.476290471901!2d106.66208371528857!3d10.774786062169131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec34e314bb3%3A0xbb57bdd1acece226!2zVGjDoG5oIFRow6FpLCBRdeG6rW4gMTAsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1598944165353!5m2!1svi!2s"
+                                width="100%" height="100%" frameborder="0" style="border: 0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr />
+                    <div class="copy-right">
+                        <p>
+                            &copy; 2020 Bản quyền thuộc về thietbidienavhh.com - Thiết kế bởi
+                            bksoftwarevn.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./library/jquery/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="./library/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="./library/fontawesome-free-5.14.0-web/js/all.js"></script>
+
+
+    <!-- ======Custom js ======= -->
+
+    <!-- 
+    <script src="https://cdn.bksoftwarevn.com/resources/library_js/ajax_micro_service/ajax_global.js"></script>
+    <script src="https://cdn.bksoftwarevn.com/resources/library_js/ajax_micro_service/ajax_news_service.js"></script> -->
+    <!-- <script src="https://cdn.bksoftwarevn.com/resources/library_js/ajax_micro_service/ajax_product_service.js"></script>  -->
+
+    <script src="./js/ajax/model/ajax_news_service.js"></script>
+    <script src="./js/ajax/model/ajax_product_service.js"></script>
+    <script src="./js/ajax/model/ajax_global.js"></script>
+    <script src="./js/ajax_main.js"></script>
+
+    <!-- <script src="./js/ajax/pages/page_tin_tuc.js"></script>
+    <script src="./js/ajax/pages/page_tin_tuc_nbg.js"></script>
+    <script src="./js/ajax/pages/page_common_category.js"></script> -->
+
+    <!-- ============= Library Js  ============= -->
+    <script src="./library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./library/particles.js"></script>
+
+    <script src="./js/global.js"></script>
+
+</body>
+
+</html>
